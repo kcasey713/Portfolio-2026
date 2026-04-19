@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casey Kim, CGCS — Director of Agronomy</title>
+<meta name="description" content="Casey Kim, CGCS — Director of Agronomy at Ojai Valley Inn. 25+ years leading championship-standard agronomy at elite private clubs and resorts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-deep:#2E5339;
+  --green-med:#4A7C59;
+  --green-light:#E8F0EA;
+  --green-mist:#F3F7F4;
+  --gold:#B8923A;
+  --gold-light:#F5EDD6;
+  --gold-deep:#8F6F26;
+  --charcoal:#1F2723;
+  --ink:#2B2B2B;
+  --muted:#6B6B6B;
+  --line:#D9DDD7;
+  --off-white:#FAFAF7;
+  --white:#FFFFFF;
+  --content:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--off-white);
+  line-height:1.7;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  color:var(--green-deep);
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:-0.01em;
+}
+a{color:var(--green-deep);text-decoration:none;transition:color .2s}
+a:hover{color:var(--gold)}
+.eyebrow{
+  font-family:'Inter',sans-serif;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.22em;
+  color:var(--gold);
+  font-weight:600;
+  margin-bottom:14px;
+}
+.rule-gold{width:64px;height:2px;background:var(--gold);margin:20px 0}
+.rule-gold.center{margin-left:auto;margin-right:auto}
+
+/* ---------- NAV ---------- */
+nav.top{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,250,247,0.96);
+  backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav.top .wrap{
+  max-width:var(--content);margin:0 auto;padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+nav.top .brand{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:20px;font-weight:700;color:var(--green-deep);
+  letter-spacing:0.04em;
+}
+nav.top .brand span{color:var(--gold);font-weight:500;font-size:13px;margin-left:6px;letter-spacing:0.12em;text-transform:uppercase;}
+nav.top ul{list-style:none;display:flex;gap:28px;}
+nav.top ul a{
+  font-size:13px;color:var(--ink);
+  text-transform:uppercase;letter-spacing:0.14em;font-weight:500;
+}
+nav.top ul a:hover{color:var(--gold)}
+@media(max-width:820px){nav.top ul{display:none}}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:linear-gradient(155deg,#263f2c 0%,var(--green-deep) 45%,#355f3e 100%);
+  color:var(--white);
+  padding:110px 28px 130px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 85% 20%,rgba(184,146,58,0.15),transparent 50%),
+             radial-gradient(circle at 10% 80%,rgba(232,240,234,0.08),transparent 40%);
+  pointer-events:none;
+}
+.hero .wrap{max-width:var(--content);margin:0 auto;position:relative;z-index:2}
+.hero .tag{
+  display:inline-block;
+  font-size:11px;text-transform:uppercase;letter-spacing:0.24em;
+  color:var(--gold);font-weight:600;
+  padding:6px 14px;border:1px solid rgba(184,146,58,0.5);border-radius:2px;
+  margin-bottom:30px;
+}
+.hero h1{
+  font-size:72px;color:var(--white);line-height:1.05;
+  font-weight:700;margin-bottom:20px;
+}
+.hero h1 em{color:var(--gold);font-style:normal;font-weight:500}
+.hero .title-line{
+  font-size:22px;color:#E8E8E0;font-weight:300;
+  margin-bottom:44px;letter-spacing:0.02em;
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+}
+.hero .cred-strip{
+  display:flex;gap:0;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,0.2);
+  border-bottom:1px solid rgba(255,255,255,0.2);
+  padding:22px 0;margin-top:50px;
+}
+.hero .cred{
+  flex:1;min-width:180px;padding:0 22px;
+  border-right:1px solid rgba(255,255,255,0.12);
+}
+.hero .cred:last-child{border-right:none}
+.hero .cred .l{
+  font-size:10px;text-transform:uppercase;letter-spacing:0.18em;
+  color:rgba(255,255,255,0.55);margin-bottom:6px;font-weight:600;
+}
+.hero .cred .v{font-size:15px;color:#FFFFFF;font-weight:500}
+@media(max-width:760px){
+  .hero{padding:70px 24px 90px}
+  .hero h1{font-size:44px}
+  .hero .title-line{font-size:18px}
+  .hero .cred{flex:1 1 100%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding:10px 0}
+  .hero .cred:last-child{border-bottom:none}
+}
+
+/* ---------- SECTIONS ---------- */
+section{padding:96px 28px}
+section.alt{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section.mist{background:var(--green-mist)}
+section .inner{max-width:var(--content);margin:0 auto}
+section h2{
+  font-size:44px;margin-bottom:10px;
+}
+.lede{
+  font-size:19px;color:var(--ink);line-height:1.65;
+  font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;
+  max-width:780px;margin:0 0 48px;
+}
+.body p{margin-bottom:20px;color:#3A3A3A}
+.body p strong{color:var(--green-deep);font-weight:600}
+
+/* ---------- PHILOSOPHY ---------- */
+.pillars{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:48px;
+}
+.pillar{
+  padding:32px 26px;background:var(--white);
+  border:1px solid var(--line);border-top:3px solid var(--gold);
+}
+.pillar .num{
+  font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);
+  line-height:1;margin-bottom:14px;font-weight:600;
+}
+.pillar h4{font-size:19px;margin-bottom:12px;color:var(--green-deep)}
+.pillar p{font-size:14px;color:#4A4A4A;line-height:1.65}
+@media(max-width:920px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.pillars{grid-template-columns:1fr}}
+
+/* ---------- METRICS ---------- */
+.metrics-intro{max-width:720px;margin-bottom:48px}
+.metrics{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border-top:1px solid var(--line);border-left:1px solid var(--line);
+  background:var(--white);
+}
+.metric{
+  padding:38px 28px;
+  border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  text-align:left;
+}
+.metric .v{
+  font-family:'Cormorant Garamond',serif;
+  font-size:48px;font-weight:600;color:var(--green-deep);line-height:1;
+  margin-bottom:10px;
+}
+.metric .v sup{font-size:20px;color:var(--gold);top:-18px;margin-left:2px;font-weight:500}
+.metric .l{
+  font-size:12px;text-transform:uppercase;letter-spacing:0.14em;
+  color:var(--muted);font-weight:600;line-height:1.5;
+}
+.metric .d{
+  font-size:13px;color:#666;margin-top:8px;line-height:1.55;
+}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.metrics{grid-template-columns:1fr}}
+
+/* ---------- CASE STUDY (OVI) ---------- */
+.case{
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;
+}
+.case .left .role-title{
+  font-size:11px;text-transform:uppercase;letter-spacing:0.22em;color:var(--gold);font-weight:600;
+  margin-bottom:14px;
+}
+.case h3{font-size:38px;margin-bottom:10px;}
+.case .dates{color:var(--muted);font-size:14px;margin-bottom:18px;letter-spacing:0.06em}
+.case .ctx{
+  background:var(--green-mist);border-left:3px solid var(--gold);
+  padding:22px 26px;margin-bottom:30px;
+}
+.case .ctx p{font-size:14px;color:#3A3A3A;line-height:1.6}
+.case .highlight-box{
+  background:var(--green-deep);color:#FAFAF7;
+  padding:36px 34px;
+}
+.case .highlight-box .label{
+  font-size:10px;text-transform:uppercase;letter-spacing:0.24em;
+  color:var(--gold);font-weight:700;margin-bottom:18px;
+}
+.case .highlight-box h4{
+  color:#FFFFFF;font-size:24px;margin-bottom:20px;line-height:1.25;
+  font-weight:600;
+}
+.case .highlight-box ul{list-style:none;margin:18px 0 0}
+.case .highlight-box li{
+  padding:14px 0;border-top:1px solid rgba(255,255,255,0.12);
+  display:flex;gap:14px;align-items:flex-start;
+}
+.case .highlight-box li:first-of-type{border-top:none}
+.case .highlight-box li .k{
+  color:var(--gold);font-size:13px;font-weight:700;min-width:90px;
+  font-family:'Cormorant Garamond',serif;letter-spacing:0.04em;
+}
+.case .highlight-box li .t{
+  color:#E0E4DE;font-size:14px;line-height:1.55;
+}
+@media(max-width:900px){.case{grid-template-columns:1fr;gap:40px}}
+
+/* ---------- CAREER TIMELINE ---------- */
+.timeline{margin-top:40px;position:relative}
+.timeline::before{
+  content:'';position:absolute;top:0;bottom:0;left:150px;width:1px;
+  background:var(--line);
+}
+.tl-item{
+  display:grid;grid-template-columns:150px 1fr;gap:40px;
+  padding:28px 0;border-bottom:1px solid var(--line);
+  position:relative;
+}
+.tl-item:last-child{border-bottom:none}
+.tl-item .years{
+  color:var(--gold);font-weight:600;font-size:13px;
+  letter-spacing:0.1em;padding-top:6px;position:relative;
+}
+.tl-item .years::after{
+  content:'';position:absolute;right:-5px;top:10px;
+  width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--off-white);
+}
+section.alt .tl-item .years::after{border-color:var(--white)}
+.tl-item h3{font-size:24px;margin-bottom:4px}
+.tl-item .facility{
+  font-size:13px;color:var(--muted);margin-bottom:14px;font-style:italic;letter-spacing:0.02em;
+}
+.tl-item p{font-size:15px;color:#3A3A3A;margin-bottom:12px;line-height:1.7}
+.tl-item p:last-child{margin-bottom:0}
+.tl-item .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tl-item .tag{
+  font-size:11px;text-transform:uppercase;letter-spacing:0.12em;
+  color:var(--green-deep);padding:5px 10px;background:var(--green-light);
+  font-weight:600;
+}
+@media(max-width:720px){
+  .timeline::before{left:0;display:none}
+  .tl-item{grid-template-columns:1fr;gap:8px}
+  .tl-item .years::after{display:none}
+}
+
+/* ---------- TOURNAMENTS ---------- */
+.tournaments{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;
+}
+.trn{
+  background:var(--white);border:1px solid var(--line);
+  padding:22px 22px 20px;border-left:3px solid var(--green-deep);
+}
+.trn .circuit{
+  font-size:10px;text-transform:uppercase;letter-spacing:0.22em;
+  color:var(--gold);font-weight:700;margin-bottom:8px;
+}
+.trn h4{font-size:18px;margin-bottom:8px}
+.trn .meta{font-size:13px;color:var(--muted);line-height:1.5}
+.trn .meta strong{color:var(--ink);font-weight:500}
+@media(max-width:840px){.tournaments{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.tournaments{grid-template-columns:1fr}}
+
+/* ---------- MENTORSHIP ---------- */
+.mentor-grid{
+  display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start;
+}
+.mentor-grid .right{
+  background:var(--green-mist);padding:38px 36px;border-top:3px solid var(--gold);
+}
+.mentor-grid .right h4{font-size:18px;color:var(--green-deep);margin-bottom:20px;letter-spacing:0.04em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:600;}
+.mentor-grid .right ul{list-style:none}
+.mentor-grid .right li{
+  padding:14px 0;border-top:1px solid rgba(30,70,40,0.12);
+  font-size:15px;color:var(--ink);
+}
+.mentor-grid .right li:first-child{border-top:none}
+.mentor-grid .right li strong{color:var(--green-deep);display:block;margin-bottom:2px;font-weight:600}
+.mentor-grid .right li span{color:var(--muted);font-size:13px;font-style:italic}
+@media(max-width:900px){.mentor-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ---------- CREDENTIALS ---------- */
+.creds-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0;
+  border-top:1px solid var(--line);border-left:1px solid var(--line);
+  background:var(--white);margin-top:40px;
+}
+.cred-item{
+  padding:28px 32px;
+  border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:flex;gap:20px;align-items:flex-start;
+}
+.cred-item .icon{
+  width:44px;height:44px;background:var(--green-light);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--green-deep);
+  font-weight:700;
+}
+.cred-item .txt h4{font-size:16px;margin-bottom:4px;color:var(--ink);font-family:'Inter',sans-serif;font-weight:600;letter-spacing:0}
+.cred-item .txt p{font-size:13px;color:var(--muted);line-height:1.5}
+.cred-item .txt p strong{color:var(--green-deep);font-weight:600}
+@media(max-width:720px){.creds-grid{grid-template-columns:1fr}}
+
+/* ---------- SPEAKING ---------- */
+.speaking{
+  background:var(--white);border:1px solid var(--line);
+  padding:30px 32px;margin-top:30px;
+  display:flex;gap:24px;align-items:flex-start;
+}
+.speaking .tag-v{
+  font-family:'Cormorant Garamond',serif;color:var(--gold);
+  font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;
+  min-width:140px;padding-top:4px;
+}
+.speaking .content p{font-size:15px;color:#3A3A3A;margin-bottom:8px}
+.speaking .content p:last-child{margin-bottom:0}
+
+/* ---------- FOOTER/CONTACT ---------- */
+footer{
+  background:var(--green-deep);color:#D6DDD7;padding:80px 28px 40px;
+}
+footer .wrap{max-width:var(--content);margin:0 auto;}
+footer .grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:50px}
+footer h4{color:#FFFFFF;font-size:22px;margin-bottom:14px}
+footer .tag-line{
+  color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:0.22em;
+  font-weight:600;margin-bottom:12px;
+}
+footer p{color:#C4CCC5;font-size:14px;line-height:1.8}
+footer ul{list-style:none}
+footer li{margin-bottom:8px;font-size:14px}
+footer a{color:#D6DDD7;border-bottom:1px dotted rgba(214,221,215,0.3);transition:all .2s}
+footer a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+footer .bottom{
+  border-top:1px solid rgba(255,255,255,0.12);padding-top:24px;
+  display:flex;justify-content:space-between;font-size:12px;color:#95A097;letter-spacing:0.06em;
+}
+@media(max-width:780px){
+  footer .grid{grid-template-columns:1fr;gap:30px}
+  footer .bottom{flex-direction:column;gap:10px}
+}
+
+/* ---------- UTILITY ---------- */
+.section-title-block{margin-bottom:56px;max-width:820px}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <div class="brand">Casey Kim<span>CGCS</span></div>
+    <ul>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#tournaments">Tournaments</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">Director of Agronomy &nbsp;·&nbsp; Ojai Valley Inn</span>
+    <h1>Casey Kim<br><em>CGCS</em></h1>
+    <p class="title-line">Championship course conditioning, disciplined agronomy, and teams that deliver at 5-star standard.</p>
+
+    <div class="cred-strip">
+      <div class="cred">
+        <div class="l">Experience</div>
+        <div class="v">25+ years in elite agronomy</div>
+      </div>
+      <div class="cred">
+        <div class="l">Current Role</div>
+        <div class="v">Ojai Valley Inn · Since 2022</div>
+      </div>
+      <div class="cred">
+        <div class="l">Certification</div>
+        <div class="v">CGCS · Audubon Certified</div>
+      </div>
+      <div class="cred">
+        <div class="l">Contact</div>
+        <div class="v">760.393.1153 · kcasey713@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PHILOSOPHY ================= -->
+<section id="philosophy">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Agronomic Philosophy</div>
+      <h2>Championship conditioning is built on discipline, not spectacle.</h2>
+      <div class="rule-gold"></div>
+      <p class="lede">Every great course is the daily product of clear standards, sound cultural practice, and a crew that has been given the training and the authority to deliver them.</p>
+    </div>
+
+    <div class="body" style="max-width:780px">
+      <p>I have spent a quarter-century leading agronomic programs at elite private clubs and high-profile resort facilities across four climate zones. The thread across every role has been the same: <strong>elevate conditioning standards while building a team capable of sustaining them.</strong></p>
+      <p>The work is technical — species selection, MLSN-aligned fertility, cultural practice scheduling, irrigation audit discipline, disease pressure management, tree and canopy strategy, drainage, bunker flash restoration, fleet planning. But it is first an operational discipline. Great agronomy is what happens when the right standards are set, the crew is trained and trusted to execute them, and capital and labor are deliberately allocated against the problems that actually matter.</p>
+      <p>At Ojai Valley Inn, that meant rebuilding the program from first principles beginning in 2022 — reinforcing daily setup standards, launching a section-based accountability framework, implementing a preventive fungicide program, refining MARS (Minimal Aeration for Resilient Surfaces) on greens, modernizing the irrigation injection system, and naming the long-term capital priorities with a straight face. That same discipline shaped the grow-ins at Somerby and Indian Wells, the transition work at Montecito, and the tournament deliveries I led at Indian Wells Golf Resort during its Skins Game and Golf Channel years.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">01</div>
+        <h4>Agronomic Excellence</h4>
+        <p>Championship conditioning and aesthetic presentation across cool-season, warm-season, and transition-zone turfgrass systems.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">02</div>
+        <h4>Team Development</h4>
+        <p>Recruiting, mentoring, and building high-performance maintenance teams with integrated cross-training programs.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">03</div>
+        <h4>Financial Stewardship</h4>
+        <p>Goals-based budget development, short- and long-term forecasting, cost control, and capital expenditure analysis.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">04</div>
+        <h4>Renovation & Construction</h4>
+        <p>Full project lifecycle — site preparation, grow-in management, and delivering opening standards that exceed expectations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT / METRICS ================= -->
+<section id="impact" class="alt">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Selected Impact</div>
+      <h2>Measured outcomes from the current role.</h2>
+      <div class="rule-gold"></div>
+      <p class="lede">A selection of documented metrics from the Ojai Valley Inn program, spanning conditioning, environmental stewardship, financial efficiency, and team development.</p>
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="v">44.4<sup>%</sup></div>
+        <div class="l">Water Use Reduction</div>
+        <div class="d">Year-over-year reduction through irrigation audit discipline and infrastructure modernization.</div>
+      </div>
+      <div class="metric">
+        <div class="v">45.4<sup>M gal</sup></div>
+        <div class="l">Water Saved Annually</div>
+        <div class="d">Measured savings achieved without measurable impact on course conditioning.</div>
+      </div>
+      <div class="metric">
+        <div class="v">42.17<sup>″</sup></div>
+        <div class="l">Rainfall Managed, Zero Turf Loss</div>
+        <div class="d">Record 2023 wet season — two atmospheric rivers, storm recovery executed without permanent damage.</div>
+      </div>
+      <div class="metric">
+        <div class="v">0</div>
+        <div class="l">Greens Disease Outbreaks</div>
+        <div class="d">Preventive fungicide program delivered season-long control under record wet conditions.</div>
+      </div>
+      <div class="metric">
+        <div class="v">0.110<sup>″</sup></div>
+        <div class="l">Finest Greens Conditioning</div>
+        <div class="d">Bent/Poa greens refined through program maturity — finest heights of the four-year program arc.</div>
+      </div>
+      <div class="metric">
+        <div class="v">A+</div>
+        <div class="l">Audubon Sanctuary</div>
+        <div class="d">Led OVI to certification under the Audubon Cooperative Sanctuary Program through Audubon International.</div>
+      </div>
+      <div class="metric">
+        <div class="v">4</div>
+        <div class="l">Direct Reports → Superintendents</div>
+        <div class="d">Protégés now leading programs at Somerby, Ironwood, Porcupine Creek, and Bermuda Dunes.</div>
+      </div>
+      <div class="metric">
+        <div class="v">8<sup>+</sup></div>
+        <div class="l">Championship Events Prepared</div>
+        <div class="d">PGA Tour, Nationwide Tour, Golf Channel, GCSAA national, and Skins Game events over the career.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED CASE STUDY — OVI ================= -->
+<section>
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Featured Work — 2022 to Present</div>
+      <h2>Rebuilding the agronomic program at a 5-star California resort.</h2>
+      <div class="rule-gold"></div>
+      <p class="lede">Four years of program development at Ojai Valley Inn — foundation, refinement, and strategic shift — documented across three annual reviews.</p>
+    </div>
+
+    <div class="case">
+      <div class="left">
+        <div class="role-title">Director of Agronomy</div>
+        <h3>Ojai Valley Inn</h3>
+        <div class="dates">2022 — Present &nbsp;·&nbsp; Ojai, CA</div>
+        <div class="ctx">
+          <p>Five-star historic resort. 18-hole course designed by George Thomas in 1923. Recipient of numerous hospitality excellence awards. Direct responsibility for all agronomic operations, capital planning, team development, and stewardship alignment with the resort's broader brand.</p>
+        </div>
+
+        <div class="body">
+          <p><strong>2023 — Foundation year.</strong> Arrived and rebuilt the operating model around cross-training, section-based accountability, and daily setup standards. Launched the tree removal program. Installed on-site weather stations. Upgraded to Cirrus Pro irrigation software. Revitalized the injection system. Delivered the California Women's Championship to full tournament conditioning in the wettest year on record — 42.17 inches of precipitation, including back-to-back atmospheric rivers, five consecutive closure days, and zero permanent turf loss. Initiated the Audubon Cooperative Sanctuary registration.</p>
+          <p><strong>2024 — Program refinement.</strong> Implemented the MARS (Minimal Aeration for Resilient Surfaces) program on greens. Formally documented bunker maintenance as the department's single largest labor demand. Wrote the business case for a comprehensive bunker redesign. Continued the tree removal program and moved the Audubon program from registration to active compliance. Refined the proxy (paclobutrazol) program for annual bluegrass suppression. Course conditions held through variable weather and all events were hosted without turf setbacks.</p>
+          <p><strong>2025 — Strategic shift.</strong> Delivered the #11 green recovery program — the most intensive single-green intervention of the four-year arc, with documented improvement from targeted overseeding, sand topdressing, and cultural practice adjustment. Refined greens to 0.110–0.120 inches. Promoted Jesus Samayoa to Equipment Operator — the clearest internal development outcome of the program. Acquired the large-area aerifier. Completed the autonomous mower feasibility assessment. Framed the three-decision ownership conversation: bunker reconstruction, Hole 13 subsurface drainage, and autonomous mower integration.</p>
+        </div>
+      </div>
+
+      <aside class="highlight-box">
+        <div class="label">Program Highlights · OVI</div>
+        <h4>Four years, three disciplines: standards, efficiency, strategy.</h4>
+        <ul>
+          <li><span class="k">Standards</span><span class="t">Daily setup protocols, section-based accountability, and cross-training rolled out in February 2023 — the operating model that anchors the program.</span></li>
+          <li><span class="k">Conditioning</span><span class="t">Greens mowing refined from 0.125″ to 0.110″ over four years. Zero disease outbreaks on greens through a preventive fungicide program.</span></li>
+          <li><span class="k">Water</span><span class="t">44.4% year-over-year water use reduction · 45.4 million gallons saved annually · Cirrus Pro upgrade and injection system revitalization.</span></li>
+          <li><span class="k">Environment</span><span class="t">Led to Audubon Cooperative Sanctuary Program certification. Tree removal program launched. Riparian buffer zones expanded.</span></li>
+          <li><span class="k">Events</span><span class="t">California Women's Championship delivered to tournament conditioning in a record wet year. Member Guest and junior events hosted without setbacks.</span></li>
+          <li><span class="k">Capital</span><span class="t">Authored the bunker redesign business case. Defined Hole 13 drainage and autonomous mower integration as capital priorities. Acquired a large-area aerifier.</span></li>
+          <li><span class="k">People</span><span class="t">Promoted Luis Rocelio Becerra and Jesus Samayoa to Equipment Operator roles. Built out career-progression framework for internal development.</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAREER TIMELINE ================= -->
+<section id="experience" class="alt">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Career Trajectory</div>
+      <h2>Twenty-five years, six elite programs, four climate zones.</h2>
+      <div class="rule-gold"></div>
+      <p class="lede">Private member clubs, resort complexes, and grow-in projects across California, Minnesota, and New York — each one built or rebuilt to a championship standard.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="years">2022 — Present</div>
+        <div>
+          <h3>Director of Agronomy · Ojai Valley Inn</h3>
+          <div class="facility">Ojai, CA &nbsp;·&nbsp; 5-star historic resort · George Thomas (1923)</div>
+          <p>Directing all golf course and agronomic operations at a landmark 5-star resort property, with conditioning standards consistent with the property's world-class reputation. Led OVI to Audubon Cooperative Sanctuary Program certification through Audubon International. Advises on renovation projects and capital improvement planning, integrating agronomic best practice with guest-experience objectives. Detailed program outcomes are documented in annual Year-in-Review reports for 2023, 2024, and 2025.</p>
+          <div class="tags"><span class="tag">Audubon Certified</span><span class="tag">CWC Tournament</span><span class="tag">Capital Planning</span><span class="tag">MARS Program</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2016 — 2022</div>
+        <div>
+          <h3>Manager · Easia Golf Investment</h3>
+          <div class="facility">San Jose, CA &nbsp;·&nbsp; 36-hole resort complex — The Golf Club at Terra Lago & The Ranch</div>
+          <p>Managed core business operations and agronomic programs across a 36-hole resort complex, leading capital projects that revitalized the property and elevated the overall playing experience. Integrated agronomic program management with resort-side operating priorities.</p>
+          <div class="tags"><span class="tag">Multi-Course Operations</span><span class="tag">Capital Revitalization</span><span class="tag">Resort Agronomy</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2013 — 2016</div>
+        <div>
+          <h3>Certified Golf Course Superintendent · Montecito Country Club</h3>
+          <div class="facility">Santa Barbara, CA &nbsp;·&nbsp; Elite private member club · Max Behr (1922)</div>
+          <p>Led all agronomic operations and engaged directly with the membership through a critical transition period preceding a major course renovation. Framed and stewarded the conditioning standard during a period of heightened member expectation and design-team engagement.</p>
+          <div class="tags"><span class="tag">Private Club</span><span class="tag">Member Engagement</span><span class="tag">Pre-Renovation Planning</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2012 — 2013</div>
+        <div>
+          <h3>Certified Golf Course Superintendent · Seneca Hickory Stick Golf Club</h3>
+          <div class="facility">Lewiston, NY &nbsp;·&nbsp; Robert Trent Jones II design · Ranked #6 Best New Course in America</div>
+          <p>Created and executed a complete transformation of course maintenance standards, elevating conditioning to match the facility's national recognition. Developed staff training programs and optimized equipment utilization to drive sustainable agronomic improvement at a young, award-recognized course.</p>
+          <div class="tags"><span class="tag">Standards Transformation</span><span class="tag">Training Program</span><span class="tag">Equipment Optimization</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2006 — 2011</div>
+        <div>
+          <h3>Director of Agronomy · Indian Wells Golf Resort</h3>
+          <div class="facility">Indian Wells, CA &nbsp;·&nbsp; 36-hole resort · Renovation 2005–06 · John Fought & Clive Clark</div>
+          <p>Directed golf course renovations from site preparation through grow-in, delivering distinctive agronomic resort standards at one of California's premier desert facilities. Coordinated tournament preparation for PGA Tour, GCSAA National, and televised Golf Channel events, aligning crew, course presentation, and broadcast requirements across multiple high-profile weeks.</p>
+          <div class="tags"><span class="tag">Renovation Grow-In</span><span class="tag">PGA Tour Prep</span><span class="tag">Broadcast TV Events</span><span class="tag">Desert Agronomy</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2002 — 2006</div>
+        <div>
+          <h3>Certified Golf Course Superintendent · Somerby Golf Club</h3>
+          <div class="facility">Byron, MN &nbsp;·&nbsp; Private member club · John Fought & Tom Lehman · Golf Digest's 8th Best New Private Course (2004)</div>
+          <p>Oversaw grow-in and establishment of a newly opened championship private club from opening through national recognition. Delivered Nationwide Tour Scholarship America events in 2005 and 2006 and the Scratch Players Championship in 2006, establishing the facility's competitive reputation within two years of opening.</p>
+          <div class="tags"><span class="tag">New-Course Grow-In</span><span class="tag">Nationwide Tour</span><span class="tag">Cool-Season Program</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="years">2000 — 2001</div>
+        <div>
+          <h3>Assistant Superintendent · PGA West Palmer</h3>
+          <div class="facility">La Quinta, CA &nbsp;·&nbsp; Bob Hope Classic host venue</div>
+          <p>Supported championship conditioning preparation for the PGA Tour's Bob Hope Classic in 2000 and 2001. Formative exposure to desert-resort agronomy, tournament week cadence, and the operational intensity of a PGA Tour-level broadcast event.</p>
+          <div class="tags"><span class="tag">PGA Tour</span><span class="tag">Desert Resort</span><span class="tag">Tournament Week</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOURNAMENTS ================= -->
+<section id="tournaments">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Championship Events</div>
+      <h2>Tournament preparation record.</h2>
+      <div class="rule-gold"></div>
+      <p class="lede">Championship events delivered across PGA Tour, Nationwide Tour, Golf Channel, and GCSAA national programs.</p>
+    </div>
+
+    <div class="tournaments">
+      <div class="trn">
+        <div class="circuit">PGA Tour</div>
+        <h4>Bob Hope Classic</h4>
+        <div class="meta"><strong>2000, 2001</strong> &nbsp;·&nbsp; PGA West Palmer<br>Assistant Superintendent</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Skins Game</div>
+        <h4>LG Skins Game</h4>
+        <div class="meta"><strong>2007, 2008</strong> &nbsp;·&nbsp; Indian Wells Golf Resort</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Nationwide Tour</div>
+        <h4>Scholarship America</h4>
+        <div class="meta"><strong>2005, 2006</strong> &nbsp;·&nbsp; Somerby Golf Club</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Golf Channel</div>
+        <h4>Big Break Indian Wells</h4>
+        <div class="meta"><strong>2011</strong> &nbsp;·&nbsp; Indian Wells Golf Resort</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Charity Pro-Am</div>
+        <h4>John Deere World Classic</h4>
+        <div class="meta"><strong>2009</strong> &nbsp;·&nbsp; Indian Wells Golf Resort</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">GCSAA National</div>
+        <h4>GCSAA National Tournament</h4>
+        <div class="meta"><strong>2010</strong> &nbsp;·&nbsp; Indian Wells Golf Resort</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Amateur Championship</div>
+        <h4>Scratch Players Championship</h4>
+        <div class="meta"><strong>2006</strong> &nbsp;·&nbsp; Somerby Golf Club</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Women's Championship</div>
+        <h4>California Women's Championship</h4>
+        <div class="meta"><strong>2023</strong> &nbsp;·&nbsp; Ojai Valley Inn</div>
+      </div>
+      <div class="trn">
+        <div class="circuit">Member Events</div>
+        <h4>Annual Member Guest & Junior</h4>
+        <div class="meta"><strong>Annual</strong> &nbsp;·&nbsp; OVI · Indian Wells · Somerby · Montecito</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTORSHIP ================= -->
+<section class="mist">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Leadership & Mentorship</div>
+      <h2>Teams that deliver — and the people who go on to lead them.</h2>
+      <div class="rule-gold"></div>
+    </div>
+
+    <div class="mentor-grid">
+      <div class="left body">
+        <p>The clearest evidence of a program is the trajectory of the people inside it. At OVI, that looks like Luis Rocelio Becerra's promotion to Equipment Operator in 2023 and Jesus Samayoa's promotion to Equipment Operator in 2025 — two direct outcomes of the cross-training and standards culture put in place on arrival.</p>
+        <p>Across the broader career, four former direct reports now lead their own programs as Golf Course Superintendents at desert and upper-Midwest facilities. Several more are established in operator and assistant-superintendent roles.</p>
+        <p>I believe in a team that is cross-trained across greens, tee/approach, fairway, and rough operations; that is held to daily setup standards and section-based accountability; that is given clear training, equipment, and authority; and that is supported with safety discipline — pre-shift calisthenics, Active Assailant Preparedness Training, protective footwear programs, and heat-illness prevention among them.</p>
+        <p>The work a maintenance crew does is the most visible product of the agronomy program. If I've done my job, the course shows it and the team can explain why.</p>
+      </div>
+      <aside class="right">
+        <h4>Mentored Staff Now in Superintendent Roles</h4>
+        <ul>
+          <li><strong>Somerby Golf Club</strong><span>Golf Course Superintendent</span></li>
+          <li><strong>Ironwood Country Club</strong><span>Golf Course Superintendent</span></li>
+          <li><strong>Porcupine Creek Golf Club</strong><span>Golf Course Superintendent</span></li>
+          <li><strong>Bermuda Dunes Country Club</strong><span>Golf Course Superintendent</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREDENTIALS ================= -->
+<section id="credentials">
+  <div class="inner">
+    <div class="section-title-block">
+      <div class="eyebrow">Education & Credentials</div>
+      <h2>Credentials, continuing education, and industry engagement.</h2>
+      <div class="rule-gold"></div>
+    </div>
+
+    <div class="creds-grid">
+      <div class="cred-item">
+        <div class="icon">R</div>
+        <div class="txt">
+          <h4>Turfgrass Management Certificate</h4>
+          <p><strong>Rutgers University</strong> · New Brunswick, NJ · 1998</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">C</div>
+        <div class="txt">
+          <h4>Certified Golf Course Superintendent (CGCS)</h4>
+          <p><strong>Golf Course Superintendent Association of America</strong> · 2006</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">Q</div>
+        <div class="txt">
+          <h4>Qualified Applicator License</h4>
+          <p><strong>California Department of Pesticide Regulation</strong></p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">A</div>
+        <div class="txt">
+          <h4>Audubon Cooperative Sanctuary Program Certified</h4>
+          <p><strong>Audubon International</strong> · Certifying facility: Ojai Valley Inn</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">G</div>
+        <div class="txt">
+          <h4>Active Member — GCSAA</h4>
+          <p><strong>Golf Course Superintendents Association of America</strong></p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">S</div>
+        <div class="txt">
+          <h4>Active Member — SCGCSA</h4>
+          <p><strong>Southern California Golf Course Superintendent Association</strong></p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">U</div>
+        <div class="txt">
+          <h4>USGA Rules Workshop</h4>
+          <p><strong>United States Golf Association</strong> · San Diego, CA · February 2025</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="icon">P</div>
+        <div class="txt">
+          <h4>Professional Speaking Engagement</h4>
+          <p>Construction and Grow-In · <strong>Minnesota GCSA Chapter Meeting</strong> · 2005</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="speaking">
+      <div class="tag-v">Continuing Education</div>
+      <div class="content">
+        <p>Ongoing engagement with the professional community through GCSAA national events, SCGCSA chapter programming, and targeted workshops. Four years of documented annual program reviews (Year-in-Review reports, 2023–2025) frame the ongoing research and planning work at Ojai Valley Inn, including water conservation, tree management quantification, autonomous mower integration feasibility, and bunker redesign economics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT / FOOTER ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="tag-line">Contact</div>
+        <h4>Let's talk about your program.</h4>
+        <p>Available for consultation, collaboration, and speaking opportunities on championship agronomy, team development, capital planning, and course-renovation programs.</p>
+      </div>
+      <div>
+        <div class="tag-line">Direct</div>
+        <ul>
+          <li><a href="tel:+17603931153">760.393.1153</a></li>
+          <li><a href="mailto:kcasey713@gmail.com">kcasey713@gmail.com</a></li>
+          <li>Ojai, California</li>
+        </ul>
+      </div>
+      <div>
+        <div class="tag-line">Affiliations</div>
+        <ul>
+          <li>GCSAA · National</li>
+          <li>SCGCSA · Regional</li>
+          <li>Audubon International</li>
+          <li>USGA · Rules</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 · Casey Kim, CGCS</div>
+      <div>Director of Agronomy · Ojai Valley Inn</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
